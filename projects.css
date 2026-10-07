@@ -1,47 +1,36 @@
-.button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.page-title {
+  font-family: "IBMPlexMono", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
 }
-
 .videos{
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-  display:flex;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   padding: 20px;
   width: auto;
   justify-content: center;
 }
-
 .video img {
     width: 280px;
     height: 280px;
     object-fit: contain;
     padding: 10px;
     background-size: auto;
-    background-color: white;
+    background-color: #121211;
     border-radius: 10px;
 }
-
 .video{
     margin: 0px 10px;
     padding: 10px;
 }
-
 .video:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
-
-h1{
-    grid-column: 1 / -1;
-    padding: 5%;
-}
-
 @media (max-width: 768px) {
     .videos{
-        grid-column: 1 / -1;
-        grid-row: 3 / 4;
         display:inline-block;
         padding: 20px;
         width: auto;
@@ -50,8 +39,5 @@ h1{
     .video img {
         width: 200px;
         height: 200px;
-    }
-    .videos button{
-        display: none;
     }
 }
