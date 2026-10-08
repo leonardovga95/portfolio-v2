@@ -1,6 +1,5 @@
 @import url("home.css");
 @import url("projects.css");
-@import url("contact.css");
 
 @font-face {
     font-family: "Corinthia";
@@ -61,8 +60,14 @@ header{
     transition: width 0.3s ease;
 }
 .footer-content {
+  display:flex;
   background-color: #121211;
   text-align: center;
   padding: 10px;
   font-size: 1rem;
+  justify-content: space-evenly;
+}
+.footer-content img{
+  width: 150px;
+  height:auto;
 }

@@ -24,10 +24,17 @@
 .video{
     margin: 0px 10px;
     padding: 10px;
+
 }
 .video:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
+}
+@media (max-width:900px){
+    .video{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
 }
 @media (max-width: 768px) {
     .videos{
@@ -39,5 +46,9 @@
     .video img {
         width: 200px;
         height: 200px;
+    }
+    .video{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
